@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/expenseListFragment">
+
+    <fragment
+        android:id="@+id/expenseListFragment"
+        android:name="edu.vt.mobiledev.pockettracker.ui.ExpenseListFragment"
+        android:label="Expenses"
+        tools:layout="@layout/fragment_expense_list">
+        <action
+            android:id="@+id/action_expenses_to_addEditExpense"
+            app:destination="@id/addExpenseFragment">
+            <argument
+                android:name="expenseId"
+                app:argType="string"
+                android:defaultValue="@null"
+                app:nullable="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addExpenseFragment"
+        android:name="edu.vt.mobiledev.pockettracker.ui.AddExpenseFragment"
+        android:label="{label}" > <argument
+        android:name="expenseId"
+        app:argType="string"
+        android:defaultValue="@null"
+        app:nullable="true" />
+        <argument
+            android:name="label"
+            app:argType="string"
+            android:defaultValue="Add Expense" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="edu.vt.mobiledev.pockettracker.ui.AnalyticsFragment"
+        android:label="Analytics"
+        tools:layout="@layout/fragment_analytics" />
+</navigation>
