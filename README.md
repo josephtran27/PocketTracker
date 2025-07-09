@@ -1,7 +1,9 @@
 PocketTracker
+
 An Android expense tracking app designed specifically for college students to build financial literacy and stay within budget. PocketTracker provides a simple, offline alternative to complex budgeting tools with a privacy-first approach.
 
 Demo
+
 ![Screen_recording_20250708_194151-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d23322ca-8cc6-4e3b-826a-18a954ca8613)
 
 Problem & Solution
